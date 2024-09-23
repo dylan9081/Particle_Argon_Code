@@ -23,7 +23,8 @@ void setup()
 	// In order to set a pin, you must tell Device OS that the pin is
 	// an OUTPUT pin. This is often done from setup() since you only need
 	// to do it once.
-	pinMode(MY_LED, OUTPUT);
+	
+pinMode(LED_BUILTIN, OUTPUT);
 }
 
 // The loop() method is called frequently.
