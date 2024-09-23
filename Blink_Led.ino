@@ -28,19 +28,32 @@ pinMode(LED_BUILTIN, OUTPUT);
 }
 
 // The loop() method is called frequently.
-void loop()
-{
-	// Turn on the LED
-	digitalWrite(MY_LED, HIGH);
-
-	// Leave it on for one second
-	delay(3s);
-
-	// Turn it off
-	digitalWrite(MY_LED, LOW);
-
-	// Wait one more second
-	delay(1s);
-
-	// And repeat!
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  //long blink 
+  delay(400);                       
+  digitalWrite(LED_BUILTIN, LOW); 
+  delay(400);                      
+  digitalWrite(LED_BUILTIN, HIGH);  //long blink
+  delay(400); 
+  digitalWrite(LED_BUILTIN, LOW);   
+  delay(400);
+  digitalWrite(LED_BUILTIN, HIGH);  //long blink
+  delay(400);
+  digitalWrite(LED_BUILTIN, LOW);   
+  delay(400); 
+  digitalWrite(LED_BUILTIN, HIGH);  //long blink
+  delay(400);                       
+  digitalWrite(LED_BUILTIN, LOW);    
+  delay(200);                      
+  digitalWrite(LED_BUILTIN, HIGH);  //short blink
+  delay(200); 
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(200);
+  digitalWrite(LED_BUILTIN, HIGH);  //short blink
+  delay(200);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(200);
+  digitalWrite(LED_BUILTIN, HIGH);  //short blink
+  delay(200);
+  digitalWrite(LED_BUILTIN, LOW);
 }
