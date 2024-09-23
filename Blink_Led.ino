@@ -1,5 +1,7 @@
 // We define MY_LED to be the LED that we want to blink.
 //
+
+#include "Particle.h"
 // In this tutorial, we're using the blue D7 LED (next to D7 on the Photon
 // and Electron, and next to the USB connector on the Argon and Boron).
 const pin_t MY_LED = D7;
